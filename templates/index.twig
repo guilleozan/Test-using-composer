@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    <title>TEST for Imagic</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ siteUrl }}static/css/styles.css">
+</head>
+<body class="home-page">
+    <div class="wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero" style="background-image: url('{{ siteUrl }}static/images/photos/hero.jpg')">
+            <div class="hero__content content-column">
+                <h1>Imagic Test</h1>
+            </div>
+        </section>
+
+        <section class="slider-section">
+            <div class="slider-section-flex content-column">
+                <div class="slider_content">
+                    <h2>This is a slider</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it t</p>
+                    <hr/>
+                    <button type="button" class="btn btn-info">Info</button>
+                </div>
+                <div class="slider-component">
+                    <!-- Slider Component -->
+                    <div class="slider">
+                        <div class="slider__nav">
+                            <button type="button" class="slider__prev">
+                                <img src="{{ siteUrl }}static/images/arrow-prev.svg" alt="Previous">
+                            </button>
+                            <button type="button" class="slider__next">
+                                <img src="{{ siteUrl }}static/images/arrow-next.svg" alt="Next">
+                            </button>
+                        </div>
+                        <div class="slider__reel">
+                            <img src="{{ siteUrl }}static/images/photos/1.png" alt="Ridge" class="slider__image">
+                            <img src="{{ siteUrl }}static/images/photos/2.png" alt="Ridge" class="slider__image">
+                            <img src="{{ siteUrl }}static/images/photos/3.png" alt="Ridge" class="slider__image">
+                            <img src="{{ siteUrl }}static/images/photos/4.png" alt="Ridge" class="slider__image">
+                            <img src="{{ siteUrl }}static/images/photos/5.png" alt="Ridge" class="slider__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start mt-5">
+        <div class="text-center padding-footer">
+            © Copyright 2024 Imagic test. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="{{ siteUrl }}static/js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
